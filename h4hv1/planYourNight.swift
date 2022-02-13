@@ -7,6 +7,11 @@
 
 import UIKit
 
+struct varPass{
+    static var startT = "12:30:00"
+    static var endT = "00:30:00"
+}
+
 
 
 class planYourNight: UIViewController {

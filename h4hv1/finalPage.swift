@@ -1,14 +1,15 @@
 //
-//  welcomeBack.swift
+//  finalPage.swift
 //  h4hv1
 //
-//  Created by Jodi Chui on 2/13/22.
+//  Created by Megan Wiser on 2/13/22.
 //
+
 
 import UIKit
 
 
-class welcomeBack: UIViewController {
+class finalPage: UIViewController {
     
 
     override func viewDidLoad() { //this is like the MAIN function
@@ -31,13 +32,12 @@ class welcomeBack: UIViewController {
             }
     }
     
+//    @IBAction func SOS(_ sender: UIButton) {
+//        makePhoneCall(phoneNumber: "911")
+//    }
+    
     @IBAction func SOS(_ sender: UIButton) {
         makePhoneCall(phoneNumber: "911")
-    }
-    
-    @IBAction func toCheck1page(_ sender: UIButton) {
-        performSegue(withIdentifier: "seguefive", sender: self) //TO MOVE TO NEXT VIEW!!!
-        
     }
     
 }

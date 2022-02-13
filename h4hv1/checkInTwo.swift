@@ -9,12 +9,9 @@ import UIKit
 
 class checkInTwo: UIViewController {
 
-//     performSegue(withIdentifier: "segueseven", sender: self) //TO
     
-    @IBAction func toPassTest(_ sender: UIButton) {
-        performSegue(withIdentifier: "segueseven", sender: self)
-    }
-    
+       // performSegue(withIdentifier: "segueseven", sender: self)
+        
     override func viewDidLoad() { //this is like the MAIN function
         super.viewDidLoad()
         // Do any additional setup after loading the view.

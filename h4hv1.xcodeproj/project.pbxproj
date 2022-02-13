@@ -20,8 +20,10 @@
 		AB0546A127B8FD9100DF6BFF /* planYourNight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0546A027B8FD9100DF6BFF /* planYourNight.swift */; };
 		AB0546A327B9021C00DF6BFF /* password.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0546A227B9021C00DF6BFF /* password.swift */; };
 		AB56A03427B929D300D34F8E /* welcomeBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB56A03327B929D300D34F8E /* welcomeBack.swift */; };
-		AB56A03627B9489E00D34F8E /* checkInOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB56A03527B9489E00D34F8E /* checkInOne.swift */; };
 		AB56A03827B948AF00D34F8E /* checkInTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB56A03727B948AF00D34F8E /* checkInTwo.swift */; };
+		DC6E263D27B96DA700D3BFB9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6E263C27B96DA700D3BFB9 /* User.swift */; };
+		DC6E263F27B97D1F00D3BFB9 /* checkInOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6E263E27B97D1F00D3BFB9 /* checkInOne.swift */; };
+		DC6E264127B98ACC00D3BFB9 /* finalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6E264027B98ACC00D3BFB9 /* finalPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +42,10 @@
 		AB0546A027B8FD9100DF6BFF /* planYourNight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planYourNight.swift; sourceTree = "<group>"; };
 		AB0546A227B9021C00DF6BFF /* password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = password.swift; sourceTree = "<group>"; };
 		AB56A03327B929D300D34F8E /* welcomeBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeBack.swift; sourceTree = "<group>"; };
-		AB56A03527B9489E00D34F8E /* checkInOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkInOne.swift; sourceTree = "<group>"; };
 		AB56A03727B948AF00D34F8E /* checkInTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkInTwo.swift; sourceTree = "<group>"; };
+		DC6E263C27B96DA700D3BFB9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DC6E263E27B97D1F00D3BFB9 /* checkInOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkInOne.swift; sourceTree = "<group>"; };
+		DC6E264027B98ACC00D3BFB9 /* finalPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +81,10 @@
 				AB05469627B899DB00DF6BFF /* Homepage1.swift */,
 				832EC88F27B8446B00401A48 /* AppDelegate.swift */,
 				832EC89127B8446B00401A48 /* SceneDelegate.swift */,
+				DC6E263E27B97D1F00D3BFB9 /* checkInOne.swift */,
 				832EC89327B8446B00401A48 /* ViewController.swift */,
 				832EC89527B8446B00401A48 /* Main.storyboard */,
-				AB56A03527B9489E00D34F8E /* checkInOne.swift */,
+				DC6E264027B98ACC00D3BFB9 /* finalPage.swift */,
 				AB56A03727B948AF00D34F8E /* checkInTwo.swift */,
 				AB56A03327B929D300D34F8E /* welcomeBack.swift */,
 				AB0546A227B9021C00DF6BFF /* password.swift */,
@@ -90,6 +95,7 @@
 				832EC89D27B8446C00401A48 /* LaunchScreen.storyboard */,
 				832EC8A027B8446C00401A48 /* Info.plist */,
 				832EC89827B8446B00401A48 /* h4hv1.xcdatamodeld */,
+				DC6E263C27B96DA700D3BFB9 /* User.swift */,
 			);
 			path = h4hv1;
 			sourceTree = "<group>";
@@ -165,14 +171,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC6E263D27B96DA700D3BFB9 /* User.swift in Sources */,
 				AB05469F27B8FBB600DF6BFF /* contacts.swift in Sources */,
 				AB56A03427B929D300D34F8E /* welcomeBack.swift in Sources */,
 				AB05469D27B8B8F200DF6BFF /* landingPage.swift in Sources */,
 				AB0546A127B8FD9100DF6BFF /* planYourNight.swift in Sources */,
 				832EC89427B8446B00401A48 /* ViewController.swift in Sources */,
-				AB56A03627B9489E00D34F8E /* checkInOne.swift in Sources */,
 				832EC89A27B8446B00401A48 /* h4hv1.xcdatamodeld in Sources */,
 				832EC89027B8446B00401A48 /* AppDelegate.swift in Sources */,
+				DC6E263F27B97D1F00D3BFB9 /* checkInOne.swift in Sources */,
+				DC6E264127B98ACC00D3BFB9 /* finalPage.swift in Sources */,
 				832EC89227B8446B00401A48 /* SceneDelegate.swift in Sources */,
 				AB05469727B899DC00DF6BFF /* Homepage1.swift in Sources */,
 				AB56A03827B948AF00D34F8E /* checkInTwo.swift in Sources */,

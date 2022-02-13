@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Foundation
 
 
 class contacts: UIViewController {
@@ -26,6 +26,64 @@ class contacts: UIViewController {
 
     }
     
+    @IBOutlet weak var myName: UITextField!
+    @IBOutlet weak var zero: UITextField!
+    @IBOutlet weak var one: UITextField!
+    @IBOutlet weak var two: UITextField!
+    @IBOutlet weak var three: UITextField!
+
+    @IBOutlet var ContactButtonObj: UIButton!
+    
+    @IBAction func ContactButtonAction(_ sender: UIButton) {
+        
+        //On press, the button should keep all values from text fields and then move onto next screen?
+
+        var name = ""
+        var num0 = ""
+        var num1 = ""
+        var num2 = ""
+        var num3 = ""
+        
+        
+        if myName != nil {
+            name = myName.text!
+        }
+        if zero != nil {
+            num0 = zero.text!
+        }
+        if one != nil {
+            num1 = one.text!
+        }
+        if two != nil {
+            num2 = two.text!
+        }
+        if three != nil {
+            num3 = three.text!
+        }
+    
+        //Debug print statement
+        print(name + " " + num0 + " " + num1 + " " + num2 + " " + num3)
+        
+        //To backend
+        let defaults = UserDefaults.standard
+        defaults.set(name, forKey: "Name")
+        defaults.set(num0, forKey: "Ph")
+        
+    }
+    
+    
+    @IBAction func ContactOne() {
+        /*
+        let phoneOne = one.text ?? "no value"{
+            print(phoneOne)
+        }
+        */
+    }
+    
+    
+    /*override func viewDidLoad() {
+        super.viewDidLoad()
+    }*/
     
 }
 

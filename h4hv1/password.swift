@@ -20,7 +20,6 @@ class password: UIViewController {
     
     @IBOutlet weak var word: UIButton!
     
-    @IBOutlet weak var arrow: UIButton!
     
     override func viewDidLoad() { //this is like the MAIN function
         super.viewDidLoad()
@@ -30,14 +29,21 @@ class password: UIViewController {
     
     @IBAction func symbolClicked(_ sender: UIButton) {
         formOfAuth = "Symbol"
+        symbol.backgroundColor = UIColor.purple
     }
     
     @IBAction func wordClicked(_ sender: UIButton) {
         formOfAuth = "WORD"
+        word.backgroundColor = UIColor.purple
     }
     
-    @IBAction func toWelcomeBackPage(_ sender: UIButton) {
+    
+    @IBOutlet var passwordButton: UIButton!
+    
+    
+    @IBAction func passwordButtonAction(_ sender: UIButton) {
         performSegue(withIdentifier: "seguefour", sender: self)
+    
     }
     
  
