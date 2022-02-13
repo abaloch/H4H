@@ -63,7 +63,7 @@ class Controller2: UIViewController{
         var timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(TimerStart), userInfo: nil, repeats:true)
     }
     
-    @IBAction func TimerStart() {
+    /*@IBAction func TimerStart() {
         if(count > 0){
             var countHour = abs(hour)
             var countMin = abs(min)
@@ -167,6 +167,43 @@ class Controller2: UIViewController{
             count -= 1
             
             mIter += 1
+        }
+    }*/
+    
+    @IBAction func TimerStart() {
+        if(count > 0){
+            var countHour = abs(hour)
+            var countMin = abs(min)
+            var countSec = 0 //not really that great but works enough for me
+            
+            //okay switching up
+            
+            var chs = "0"
+            var cms = "0"
+            var css = "0"
+            
+            if(countHour < 10){
+                chs += String(countHour)
+            }
+            else{
+                chs = String(countHour)
+            }
+            
+            if(countMin < 10){
+                cms += String(countMin)
+            }
+            else{
+                cms = String(countMin)
+            }
+            
+            if(countSec < 10){
+                css += String(countSec)
+            }
+            else{
+                css = String(countSec)
+            }
+            
+            let display = "\(chs):\(cms):\(css)"
         }
     }
     
