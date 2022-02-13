@@ -96,28 +96,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Plan your night" translatesAutoresizingMaskIntoConstraints="NO" id="Mug-2n-sUB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Plan your night" translatesAutoresizingMaskIntoConstraints="NO" id="Mug-2n-sUB">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qos-Mh-CYn">
-                                <rect key="frame" x="261" y="719" width="133" height="123"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dR0-nS-zpW">
+                                <rect key="frame" x="261" y="720" width="133" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Button_Next" title=""/>
                                 <connections>
-                                    <segue destination="abs-FE-WWO" kind="presentation" identifier="seguethree" modalPresentationStyle="fullScreen" id="XS7-BR-7Us"/>
+                                    <action selector="toPWPage:" destination="UdR-TB-XGB" eventType="touchUpInside" id="o5l-6A-7EK"/>
+                                    <segue destination="abs-FE-WWO" kind="presentation" identifier="seguethree" modalPresentationStyle="fullScreen" id="911-TY-0Gb"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="p1f-jn-oIc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="p1f-jn-oIc" firstAttribute="trailing" secondItem="Mug-2n-sUB" secondAttribute="trailing" id="5tp-8I-yTM"/>
-                            <constraint firstAttribute="bottom" secondItem="Mug-2n-sUB" secondAttribute="bottom" id="GNK-EV-5fJ"/>
-                            <constraint firstItem="Mug-2n-sUB" firstAttribute="top" secondItem="Kvc-bo-E7j" secondAttribute="top" id="wyj-rp-Idm"/>
-                            <constraint firstItem="Mug-2n-sUB" firstAttribute="leading" secondItem="Kvc-bo-E7j" secondAttribute="leading" id="xhN-gM-yI3"/>
-                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="toPasswordPage" destination="dR0-nS-zpW" id="eMW-bk-euW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ph7-aR-tu1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -179,22 +178,32 @@
                                     <segue destination="NgY-gF-SKI" kind="presentation" identifier="seguefour" modalPresentationStyle="fullScreen" id="F74-2D-J4G"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Symbol Button" translatesAutoresizingMaskIntoConstraints="NO" id="stq-cg-YnO">
-                                <rect key="frame" x="35" y="364" width="168" height="168"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72U-Zg-ytv">
+                                <rect key="frame" x="35" y="306" width="163" height="217"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Word Button" translatesAutoresizingMaskIntoConstraints="NO" id="iGR-gO-CxR">
-                                <rect key="frame" x="211" y="364" width="163" height="168"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Symbol Button" title=""/>
+                                <connections>
+                                    <action selector="symbolClicked:" destination="abs-FE-WWO" eventType="touchUpInside" id="qu8-jf-xiD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOu-IQ-fCb">
+                                <rect key="frame" x="216" y="305" width="169" height="218"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Word Button" imagePlacement="top"/>
+                                <connections>
+                                    <action selector="wordClicked:" destination="abs-FE-WWO" eventType="touchUpInside" id="ofX-MP-gBg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Pmh-yA-kYu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="arrow" destination="NVz-9Y-S96" id="GYl-9c-u5f"/>
-                        <outlet property="symbol" destination="stq-cg-YnO" id="cdF-Sz-TmC"/>
-                        <outlet property="word" destination="iGR-gO-CxR" id="8Pf-YL-z5y"/>
+                        <outlet property="symbol" destination="72U-Zg-ytv" id="8Ad-8W-w39"/>
+                        <outlet property="word" destination="oOu-IQ-fCb" id="8M4-tg-LMu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SIw-UJ-I5f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -208,25 +217,205 @@
                     <view key="view" contentMode="scaleToFill" id="AzU-QN-wSX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Welcome Back" translatesAutoresizingMaskIntoConstraints="NO" id="his-XE-xY9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcM-rJ-Tqu">
+                                <rect key="frame" x="71" y="657" width="273" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Call 911 Button" title=""/>
+                                <connections>
+                                    <action selector="SOS:" destination="NgY-gF-SKI" eventType="touchUpInside" id="oi6-SU-SGA"/>
+                                    <action selector="toCheck1page:" destination="NgY-gF-SKI" eventType="touchUpInside" id="BRS-PW-lli"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Xh-y8-JIB">
+                                <rect key="frame" x="261" y="739" width="133" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Button_Next" title=""/>
+                                <connections>
+                                    <action selector="toCheck1page:" destination="NgY-gF-SKI" eventType="touchUpInside" id="Ghx-uu-qm3"/>
+                                    <segue destination="TMh-oo-wBc" kind="presentation" identifier="seguefive" modalPresentationStyle="fullScreen" id="sL5-l3-55T"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jTm-EF-pY0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="toCheckInPage1" destination="5Xh-y8-JIB" id="BMz-Sd-uto"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IHh-ex-EH0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3081" y="106"/>
+            <point key="canvasLocation" x="3079.7101449275365" y="105.80357142857143"/>
+        </scene>
+        <!--Check In One-->
+        <scene sceneID="OWY-Bg-T4h">
+            <objects>
+                <viewController id="TMh-oo-wBc" customClass="checkInOne" customModule="h4hv1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zP5-0T-VdK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Check In Stage 1" translatesAutoresizingMaskIntoConstraints="NO" id="XYs-bY-xCH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOg-Ih-jZg">
+                                <rect key="frame" x="261" y="666" width="133" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Button_Next" title=""/>
+                                <connections>
+                                    <action selector="toCheck2Page:" destination="0I2-FS-chT" eventType="touchUpInside" id="sbq-NX-RMS"/>
+                                    <action selector="toCheckInPage2:" destination="0I2-FS-chT" eventType="touchUpInside" id="n8h-n6-D8w"/>
+                                    <segue destination="ows-8K-GxC" kind="presentation" identifier="seguesix" modalPresentationStyle="fullScreen" id="Mcd-XI-wws"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjI-Ly-aZT">
+                                <rect key="frame" x="71" y="591" width="273" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Call 911 Button" title=""/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Eki-Ar-Hbh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fUM-6a-Mm1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="0I2-FS-chT" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3800.0000000000005" y="105.80357142857143"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ytG-N5-EGm">
+            <objects>
+                <viewController id="ows-8K-GxC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1IL-4C-XRO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Check In Stage 2" translatesAutoresizingMaskIntoConstraints="NO" id="Gzl-r8-Mhp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iR-SG-Eof">
+                                <rect key="frame" x="261" y="670" width="133" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Button_Next" title=""/>
+                                <connections>
+                                    <action selector="toPassTest:" destination="CP3-cr-k0y" eventType="touchUpInside" id="Aa3-iF-T0h"/>
+                                    <action selector="toPassTestPage:" destination="CP3-cr-k0y" eventType="touchUpInside" id="MeK-Tz-46C"/>
+                                    <segue destination="uoT-1w-5am" kind="presentation" identifier="segueseven" modalPresentationStyle="fullScreen" id="pnD-GR-rjg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13C-Sq-eA9">
+                                <rect key="frame" x="71" y="595" width="273" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Call 911 Button" title=""/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7vW-Yi-g0A"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WIW-au-wSk" userLabel="checkInTwo" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="CP3-cr-k0y" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4604.347826086957" y="105.80357142857143"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jWd-Le-80m">
+            <objects>
+                <viewController id="uoT-1w-5am" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qpS-dZ-Eis">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pass Test (1)" translatesAutoresizingMaskIntoConstraints="NO" id="JhO-rP-YzQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4o-WL-r7U">
+                                <rect key="frame" x="74" y="563" width="266" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Go Home Button" title=""/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAP-Yz-x5k">
+                                <rect key="frame" x="71" y="673" width="273" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Call 911 Button" title=""/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgA-dN-BPZ">
+                                <rect key="frame" x="40" y="441" width="334" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Extend Night Button" title=""/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DXc-Ly-kPF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="37H-lS-2Da" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5375" y="106"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0uu-4W-Pt2">
+            <objects>
+                <viewController id="Qoc-OC-dG5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OzH-YH-zBq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pass Test (2)" translatesAutoresizingMaskIntoConstraints="NO" id="7TS-YR-D39">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIK-cT-Ly0">
+                                <rect key="frame" x="71" y="371" width="273" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Call 911 Button" title=""/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lTH-BS-yuX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="un5-JK-mB9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6143" y="106"/>
         </scene>
     </scenes>
     <resources>
         <image name="Button_Next" width="109" height="109"/>
         <image name="Call 911 Button" width="249" height="75"/>
+        <image name="Check In Stage 1" width="428" height="926"/>
+        <image name="Check In Stage 2" width="428" height="926"/>
         <image name="Contacts" width="428" height="926"/>
+        <image name="Extend Night Button" width="310" height="157"/>
+        <image name="Go Home Button" width="242" height="50"/>
         <image name="Landing" width="428" height="926"/>
         <image name="New Night Button" width="366" height="73"/>
+        <image name="Pass Test (1)" width="428" height="926"/>
+        <image name="Pass Test (2)" width="428" height="926"/>
         <image name="Password" width="428" height="926"/>
         <image name="Plan your night" width="428" height="926"/>
         <image name="Symbol Button" width="168" height="221"/>
         <image name="Welcome (1)" width="428" height="926"/>
+        <image name="Welcome Back" width="428" height="926"/>
         <image name="Word Button" width="168" height="221"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

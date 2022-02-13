@@ -18,12 +18,17 @@ class planYourNight: UIViewController {
     }
     
     
- 
+    @IBOutlet weak var toPasswordPage: UIButton!
     
-    @IBAction func toPasswordView(_ sender: UIButton) {
+    @IBAction func toPWPage(_ sender: UIButton) {
         performSegue(withIdentifier: "seguethree", sender: self)
     }
-    
-    
+    //    @IBOutlet weak var nextButton: UIButton!
+//
+//    @IBAction func toPasswordView(_ sender: UIButton) {
+//        performSegue(withIdentifier: "seguethree", sender: self)
+//    }
+//
+//
 }
 

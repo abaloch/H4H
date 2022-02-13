@@ -20,6 +20,8 @@
 		AB0546A127B8FD9100DF6BFF /* planYourNight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0546A027B8FD9100DF6BFF /* planYourNight.swift */; };
 		AB0546A327B9021C00DF6BFF /* password.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0546A227B9021C00DF6BFF /* password.swift */; };
 		AB56A03427B929D300D34F8E /* welcomeBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB56A03327B929D300D34F8E /* welcomeBack.swift */; };
+		AB56A03627B9489E00D34F8E /* checkInOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB56A03527B9489E00D34F8E /* checkInOne.swift */; };
+		AB56A03827B948AF00D34F8E /* checkInTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB56A03727B948AF00D34F8E /* checkInTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		AB0546A027B8FD9100DF6BFF /* planYourNight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planYourNight.swift; sourceTree = "<group>"; };
 		AB0546A227B9021C00DF6BFF /* password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = password.swift; sourceTree = "<group>"; };
 		AB56A03327B929D300D34F8E /* welcomeBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeBack.swift; sourceTree = "<group>"; };
+		AB56A03527B9489E00D34F8E /* checkInOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkInOne.swift; sourceTree = "<group>"; };
+		AB56A03727B948AF00D34F8E /* checkInTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkInTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				832EC89127B8446B00401A48 /* SceneDelegate.swift */,
 				832EC89327B8446B00401A48 /* ViewController.swift */,
 				832EC89527B8446B00401A48 /* Main.storyboard */,
+				AB56A03527B9489E00D34F8E /* checkInOne.swift */,
+				AB56A03727B948AF00D34F8E /* checkInTwo.swift */,
 				AB56A03327B929D300D34F8E /* welcomeBack.swift */,
 				AB0546A227B9021C00DF6BFF /* password.swift */,
 				AB0546A027B8FD9100DF6BFF /* planYourNight.swift */,
@@ -164,10 +170,12 @@
 				AB05469D27B8B8F200DF6BFF /* landingPage.swift in Sources */,
 				AB0546A127B8FD9100DF6BFF /* planYourNight.swift in Sources */,
 				832EC89427B8446B00401A48 /* ViewController.swift in Sources */,
+				AB56A03627B9489E00D34F8E /* checkInOne.swift in Sources */,
 				832EC89A27B8446B00401A48 /* h4hv1.xcdatamodeld in Sources */,
 				832EC89027B8446B00401A48 /* AppDelegate.swift in Sources */,
 				832EC89227B8446B00401A48 /* SceneDelegate.swift in Sources */,
 				AB05469727B899DC00DF6BFF /* Homepage1.swift in Sources */,
+				AB56A03827B948AF00D34F8E /* checkInTwo.swift in Sources */,
 				AB0546A327B9021C00DF6BFF /* password.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
