@@ -14,6 +14,8 @@
 		832EC89A27B8446B00401A48 /* h4hv1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 832EC89827B8446B00401A48 /* h4hv1.xcdatamodeld */; };
 		832EC89C27B8446C00401A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832EC89B27B8446C00401A48 /* Assets.xcassets */; };
 		832EC89F27B8446C00401A48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832EC89D27B8446C00401A48 /* LaunchScreen.storyboard */; };
+		8398E43427B8983300EC987E /* HomePageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398E43327B8983300EC987E /* HomePageTwo.swift */; };
+		8398E43627B926A000EC987E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398E43527B926A000EC987E /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		832EC89B27B8446C00401A48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		832EC89E27B8446C00401A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		832EC8A027B8446C00401A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8398E43327B8983300EC987E /* HomePageTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTwo.swift; sourceTree = "<group>"; };
+		8398E43527B926A000EC987E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +65,13 @@
 				832EC88F27B8446B00401A48 /* AppDelegate.swift */,
 				832EC89127B8446B00401A48 /* SceneDelegate.swift */,
 				832EC89327B8446B00401A48 /* ViewController.swift */,
+				8398E43327B8983300EC987E /* HomePageTwo.swift */,
 				832EC89527B8446B00401A48 /* Main.storyboard */,
 				832EC89B27B8446C00401A48 /* Assets.xcassets */,
 				832EC89D27B8446C00401A48 /* LaunchScreen.storyboard */,
 				832EC8A027B8446C00401A48 /* Info.plist */,
 				832EC89827B8446B00401A48 /* h4hv1.xcdatamodeld */,
+				8398E43527B926A000EC987E /* User.swift */,
 			);
 			path = h4hv1;
 			sourceTree = "<group>";
@@ -143,7 +149,9 @@
 			files = (
 				832EC89427B8446B00401A48 /* ViewController.swift in Sources */,
 				832EC89A27B8446B00401A48 /* h4hv1.xcdatamodeld in Sources */,
+				8398E43627B926A000EC987E /* User.swift in Sources */,
 				832EC89027B8446B00401A48 /* AppDelegate.swift in Sources */,
+				8398E43427B8983300EC987E /* HomePageTwo.swift in Sources */,
 				832EC89227B8446B00401A48 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

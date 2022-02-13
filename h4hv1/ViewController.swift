@@ -10,8 +10,6 @@ import Foundation
 
 class ViewController: UIViewController {
     
-    
-    
    
     @IBOutlet weak var DatePicker: UIDatePicker!
     
@@ -40,6 +38,10 @@ class ViewController: UIViewController {
         
     }
     
-
+    @IBAction func continueButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "segue", sender: self)
+            
+    }
+    
 }
 
