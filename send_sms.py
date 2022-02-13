@@ -25,12 +25,12 @@ l = [f"Hi {name}, it is time to check in to Project Pineapple", f"Hi {name}, ple
 
 response = ""
 # now we need to pick one of these body statement based on the time past checkinif (offset < 15) {
+if (offset < 15):
 	response = l[0]
-} else if (offset < 30) {
+elif (offset < 30):
 	response = l[1]
-} else if (offset >= 30) {
+elif (offset >= 30):
 	response = l[2]
-}
 
 message = client.messages \
                 .create(
@@ -41,15 +41,15 @@ message = client.messages \
 
 print(message.sid)
 
-if (offset >= 30) {
-for(int i =0; i < 3; i++) {
-message = client.messages \
-                .create(
-                     body=f"Your friend {name} might be in danger, please check up on them ASAP.",
-                     from_=outgoing,
-                     to=dest[i]
-                 )
+if (offset >= 30):
+    for i in range (3):
+        message2 = client.messages \
+                        .create(
+                             body=f"Your friend {name} might be in danger, please check up on them ASAP.",
+                             from_=outgoing,
+                             to=dest[i]
+                         )
 
-print(message.sid)
-}
-}
+        print(message2.sid)
+
+
