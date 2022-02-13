@@ -14,9 +14,11 @@
 		832EC89A27B8446B00401A48 /* h4hv1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 832EC89827B8446B00401A48 /* h4hv1.xcdatamodeld */; };
 		832EC89C27B8446C00401A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832EC89B27B8446C00401A48 /* Assets.xcassets */; };
 		832EC89F27B8446C00401A48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832EC89D27B8446C00401A48 /* LaunchScreen.storyboard */; };
-		AB05469727B899DC00DF6BFF /* homepage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB05469627B899DB00DF6BFF /* homepage1.swift */; };
-		AB05469927B8A2D800DF6BFF /* homepage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB05469827B8A2D800DF6BFF /* homepage2.swift */; };
+		AB05469727B899DC00DF6BFF /* Homepage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB05469627B899DB00DF6BFF /* Homepage1.swift */; };
 		AB05469D27B8B8F200DF6BFF /* landingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB05469C27B8B8F200DF6BFF /* landingPage.swift */; };
+		AB05469F27B8FBB600DF6BFF /* contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB05469E27B8FBB600DF6BFF /* contacts.swift */; };
+		AB0546A127B8FD9100DF6BFF /* planYourNight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0546A027B8FD9100DF6BFF /* planYourNight.swift */; };
+		AB0546A327B9021C00DF6BFF /* password.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0546A227B9021C00DF6BFF /* password.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +31,11 @@
 		832EC89B27B8446C00401A48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		832EC89E27B8446C00401A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		832EC8A027B8446C00401A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB05469627B899DB00DF6BFF /* homepage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homepage1.swift; sourceTree = "<group>"; };
-		AB05469827B8A2D800DF6BFF /* homepage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homepage2.swift; sourceTree = "<group>"; };
+		AB05469627B899DB00DF6BFF /* Homepage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage1.swift; sourceTree = "<group>"; };
 		AB05469C27B8B8F200DF6BFF /* landingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landingPage.swift; sourceTree = "<group>"; };
+		AB05469E27B8FBB600DF6BFF /* contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contacts.swift; sourceTree = "<group>"; };
+		AB0546A027B8FD9100DF6BFF /* planYourNight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planYourNight.swift; sourceTree = "<group>"; };
+		AB0546A227B9021C00DF6BFF /* password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = password.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +52,6 @@
 		832EC88327B8446A00401A48 = {
 			isa = PBXGroup;
 			children = (
-				AB05469827B8A2D800DF6BFF /* homepage2.swift */,
 				832EC88E27B8446B00401A48 /* h4hv1 */,
 				832EC88D27B8446B00401A48 /* Products */,
 			);
@@ -65,11 +68,14 @@
 		832EC88E27B8446B00401A48 /* h4hv1 */ = {
 			isa = PBXGroup;
 			children = (
-				AB05469627B899DB00DF6BFF /* homepage1.swift */,
+				AB05469627B899DB00DF6BFF /* Homepage1.swift */,
 				832EC88F27B8446B00401A48 /* AppDelegate.swift */,
 				832EC89127B8446B00401A48 /* SceneDelegate.swift */,
 				832EC89327B8446B00401A48 /* ViewController.swift */,
 				832EC89527B8446B00401A48 /* Main.storyboard */,
+				AB0546A227B9021C00DF6BFF /* password.swift */,
+				AB0546A027B8FD9100DF6BFF /* planYourNight.swift */,
+				AB05469E27B8FBB600DF6BFF /* contacts.swift */,
 				AB05469C27B8B8F200DF6BFF /* landingPage.swift */,
 				832EC89B27B8446C00401A48 /* Assets.xcassets */,
 				832EC89D27B8446C00401A48 /* LaunchScreen.storyboard */,
@@ -150,13 +156,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB05469F27B8FBB600DF6BFF /* contacts.swift in Sources */,
 				AB05469D27B8B8F200DF6BFF /* landingPage.swift in Sources */,
+				AB0546A127B8FD9100DF6BFF /* planYourNight.swift in Sources */,
 				832EC89427B8446B00401A48 /* ViewController.swift in Sources */,
 				832EC89A27B8446B00401A48 /* h4hv1.xcdatamodeld in Sources */,
-				AB05469927B8A2D800DF6BFF /* homepage2.swift in Sources */,
 				832EC89027B8446B00401A48 /* AppDelegate.swift in Sources */,
 				832EC89227B8446B00401A48 /* SceneDelegate.swift in Sources */,
-				AB05469727B899DC00DF6BFF /* homepage1.swift in Sources */,
+				AB05469727B899DC00DF6BFF /* Homepage1.swift in Sources */,
+				AB0546A327B9021C00DF6BFF /* password.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

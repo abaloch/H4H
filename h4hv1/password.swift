@@ -1,21 +1,21 @@
 //
-//  homepage2.swift
+//  password.swift
 //  h4hv1
 //
-//  Created by Jodi Chui on 2/12/22.
+//  Created by Jodi Chui on 2/13/22.
 //
-
-//import Foundation
 
 import UIKit
 
-class Homepage2: UIViewController {
-    
+
+class password: UIViewController {
+
     override func viewDidLoad() { //this is like the MAIN function
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-       
+
     }
-   
+    
+    
+    
 }

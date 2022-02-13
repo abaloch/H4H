@@ -11,10 +11,10 @@ class landingPage: UIViewController {
 
     
  
-    @IBAction func nextPage(_ sender: UIButton) {
-        performSegue(withIdentifier: "segue", sender: self) //TO MOVE TO NEXT VIEW!!!
-
-    }
+//    @IBAction func nextPage(_ sender: UIButton) {
+//        performSegue(withIdentifier: "segue", sender: self) //TO MOVE TO NEXT VIEW!!!
+//
+//    }
 
     
     override func viewDidLoad() { //this is like the MAIN function
