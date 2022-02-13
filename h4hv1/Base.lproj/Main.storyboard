@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gq6-gP-rOE">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -9,73 +9,147 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="bN2-4H-ff7">
+            <objects>
+                <viewController id="Gq6-gP-rOE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dsQ-0O-vfv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Landing" translatesAutoresizingMaskIntoConstraints="NO" id="Lzl-7t-7DN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBi-U1-pZJ">
+                                <rect key="frame" x="261" y="749" width="133" height="123"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="" image="Button_Next"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Button_Next" title=""/>
+                                <connections>
+                                    <action selector="nextPage:" destination="IlV-fZ-Dlr" eventType="touchUpInside" id="Q0B-OY-HEh"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="segue" modalPresentationStyle="fullScreen" id="qIB-Vf-NHm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Nxg-s1-lla"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nxg-s1-lla" firstAttribute="trailing" secondItem="lBi-U1-pZJ" secondAttribute="trailing" constant="20" id="SZg-mT-dRr"/>
+                            <constraint firstItem="lBi-U1-pZJ" firstAttribute="bottom" secondItem="Nxg-s1-lla" secondAttribute="bottom" constant="10" id="fHm-L2-Lk9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kpx-wx-t8s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="IlV-fZ-Dlr" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-817.39130434782612" y="105.80357142857143"/>
+        </scene>
+        <!--Homepage1-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="h4hv1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="Homepage1" customModule="h4hv1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="secondLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoC-nx-ptg">
-                                <rect key="frame" x="25" y="209" width="365" height="82"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Welcome (1)" translatesAutoresizingMaskIntoConstraints="NO" id="qyS-V6-f8k">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVv-op-yKI">
-                                <rect key="frame" x="139" y="433" width="137" height="31"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rh-h8-7U7">
+                                <rect key="frame" x="71" y="679" width="273" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Plan my night --&gt;">
-                                    <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
-                                </buttonConfiguration>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="Call 911 Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Call 911 Button" title=""/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HY-pc-mpv">
+                                <rect key="frame" x="-7" y="404.5" width="428" height="87"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="New Night Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="New Night Button" title="          "/>
                                 <connections>
-                                    <action selector="planNight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0yU-1j-4aW"/>
+                                    <action selector="planMyNightFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m7y-2L-df4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woZ-Ch-qUS">
-                                <rect key="frame" x="138" y="799" width="139" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="911">
-                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="Call:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OoW-Qg-7dT"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="topLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bal-ZU-fcc">
-                                <rect key="frame" x="104" y="94" width="207" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8HY-pc-mpv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DT6-Fc-u6d"/>
+                            <constraint firstItem="8HY-pc-mpv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JG8-3m-sg2"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="planNightButton" destination="nVv-op-yKI" id="6n4-DV-mc9"/>
-                        <outlet property="secondLabel" destination="OoC-nx-ptg" id="7uA-0M-fnB"/>
-                        <outlet property="topLabel" destination="bal-ZU-fcc" id="2b8-gC-382"/>
+                        <outlet property="planMyNight" destination="8HY-pc-mpv" id="zym-om-sHh"/>
+                        <segue destination="UdR-TB-XGB" kind="presentation" identifier="segue" modalPresentationStyle="fullScreen" id="A7D-Tb-UVX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="106.47321428571428"/>
+            <point key="canvasLocation" x="2.8985507246376816" y="105.80357142857143"/>
+        </scene>
+        <!--Homepage2-->
+        <scene sceneID="M0O-7U-g8s">
+            <objects>
+                <viewController id="UdR-TB-XGB" customClass="Homepage2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kvc-bo-E7j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Plan your night" translatesAutoresizingMaskIntoConstraints="NO" id="Mug-2n-sUB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="p1f-jn-oIc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ph7-aR-tu1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="792.75362318840587" y="105.80357142857143"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RdN-Qp-Kdj">
+            <objects>
+                <viewController id="5Yn-JM-oiF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MV6-UF-epA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rhq-cn-UZq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Vt-lY-YFR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1613" y="106"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HGi-l2-2fQ">
+            <objects>
+                <viewController id="abs-FE-WWO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eum-Ee-OVc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Pmh-yA-kYu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SIw-UJ-I5f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2349" y="106"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Button_Next" width="109" height="109"/>
+        <image name="Call 911 Button" width="249" height="75"/>
+        <image name="Landing" width="428" height="926"/>
+        <image name="New Night Button" width="366" height="73"/>
+        <image name="Plan your night" width="428" height="926"/>
+        <image name="Welcome (1)" width="428" height="926"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
