@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var planNightButton: UIButton!
     
-    @IBAction func planNight(_ sender: UIButton) { // func. makes the button go to the next screen (setup page)
+    @IBAction func planNight(_ sender: UIButton) { // func. makes the button go to the next view (setup page)
         topLabel.text = "Planning"
         secondLabel.text = "Set your expected departure and arrival."
     }
