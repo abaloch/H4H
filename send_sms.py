@@ -1,21 +1,33 @@
 # Download the helper library from https://www.twilio.com/docs/python/install
 import os
+import config
+import sys
 from twilio.rest import Client
 
 
 # Find your Account SID and Auth Token at twilio.com/console
 # and set the environment variables. See http://twil.io/secure
-# account_sid = os.environ[ACd905c1d9bcd9af1e4e683e91b73fa]
-# auth_token = os.environ[8404fbf17af041bf139b814d65b7b52e]
-account_sid = "ACd905c1d9bcd9af1e4e683e91b73fa2b5"
-auth_token  = "8404fbf17af041bf139b814d65b7b52e"
+
+name = sys.argv[1] # 0 would give the script name
+offset = sys.argv[2]
+
 client = Client(account_sid, auth_token)
+l = [f"Hi {name}, it is time to check in to Project Pineapple", f"Hi {name}, please check in to Project Pineapple ASAP", f"Hi {name}, it has been over 30 minutes past your check in time. Please check in ASAP"]
+
+response = ""
+# now we need to pick one of these body statement based on the time past checkinif (offset < 15) {
+	response = l[0]
+} else if (offset < 30) {
+	response = l[1]
+} else if (offset >= 30) {
+	response = l[2]
+}
 
 message = client.messages \
                 .create(
-                     body="Your friend is in danger",
-                     from_='+18126338977',
-                     to='+14258983378'
+                     body=response,
+                     from_=outgoing,
+                     to=destination
                  )
 
 print(message.sid)
