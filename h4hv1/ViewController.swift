@@ -21,16 +21,25 @@ class ViewController: UIViewController {
         secondLabel.text = "Set your expected departure and arrival."
     }
     
-    override func viewDidLoad() {
+    
+    @IBAction func Call(_ sender: UIButton) {
+        topLabel.text = "CALLING 911 OR ASK IF THEY WANT TO ACTUALLY CALL?"
+        topLabel.textColor = .systemRed
+        secondLabel.isHidden = true
+        planNightButton.isHidden = true
+    }
+    
+    
+    override func viewDidLoad() { //this is like the main function
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         welcomeFunc()
         getStartedFunc()
-        //planNightFunc()
+        planNightFunc()
     }
     
-    func welcomeFunc() {
+    func welcomeFunc() { //
         topLabel.text = "Welcome!"
     }
     
