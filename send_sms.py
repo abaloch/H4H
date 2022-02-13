@@ -14,7 +14,7 @@ offset = sys.argv[2]
 # use the name given to query the database to find the close friends phone numbers
 connection = sqlite3.connect('h4h_database.db')
 cursor = connection.cursor()
-cursor.execute("SELECT * FROM USERS");
+cursor.execute(f"SELECT * FROM USER WHERE NAME = \'{name}\';")
 record = cursor.fetchone()
 myphone = record[1] # this is your phone number
 dest = [record[len(record)-1], record[len(record)-2], record[len(record)-3]]
