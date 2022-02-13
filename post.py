@@ -17,7 +17,7 @@ def addUser():
     Name = request.args.get('Name', None)
     Ph = int(request.args.get('Ph', None))
     # '00:00:00'
-    cursor.execute(f"INSERT INTO USER VALUES ({Name},{Ph},null,null,null,0,0,0);")
+    cursor.execute(f"INSERT INTO USER VALUES (\'{Name}\',\'{Ph}\',null,null,null,0,0,0);")
     #cursor.execute(f"INSERT INTO USER VALUES (request.args.get('Name', None),request.args.get('Ph', None),null,null,"null,null,null,0,0,0)")
 
     return 'Added user!'
