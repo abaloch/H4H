@@ -15,7 +15,7 @@ def addUser():
     connection = sqlite3.connect('h4h_database.db')
     cursor = connection.cursor()
     Name = request.args.get('Name', None)
-    Ph = request.args.get('Ph', None)
+    Ph = int(request.args.get('Ph', None))
     # '00:00:00'
     cursor.execute(f"INSERT INTO USER VALUES ({Name},{Ph},null,null,null,null,null,0,0,0);")
     #cursor.execute(f"INSERT INTO USER VALUES (request.args.get('Name', None),request.args.get('Ph', None),null,null,"null,null,null,0,0,0)")
