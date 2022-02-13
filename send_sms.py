@@ -11,6 +11,15 @@ from twilio.rest import Client
 name = sys.argv[1] # 0 would give the script name
 offset = sys.argv[2]
 
+# use the name given to query the database to find the close friends phone numbers
+connection = sqlite3.connect('h4h_database.db')
+cursor = connection.cursor()
+cursor.execute("SELECT * FROM USERS");
+record = cursor.fetchone()
+myphone = record[1] # this is your phone number
+dest = [record[len(record)-1], record[len(record)-2], record[len(record)-3]]
+
+
 client = Client(account_sid, auth_token)
 l = [f"Hi {name}, it is time to check in to Project Pineapple", f"Hi {name}, please check in to Project Pineapple ASAP", f"Hi {name}, it has been over 30 minutes past your check in time. Please check in ASAP"]
 
@@ -27,8 +36,20 @@ message = client.messages \
                 .create(
                      body=response,
                      from_=outgoing,
-                     to=destination
+                     to=myphone
                  )
 
 print(message.sid)
 
+if (offset >= 30) {
+for(int i =0; i < 3; i++) {
+message = client.messages \
+                .create(
+                     body=f"Your friend {name} might be in danger, please check up on them ASAP.",
+                     from_=outgoing,
+                     to=dest[i]
+                 )
+
+print(message.sid)
+}
+}
