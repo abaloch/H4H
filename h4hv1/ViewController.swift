@@ -9,12 +9,19 @@
 import UIKit
 import Foundation
 
+struct shareTime{
+    static var sTime = ""
+    static var eTime = ""
+}
+
 class ViewController: UIViewController {
     
    
     @IBOutlet weak var DatePicker: UIDatePicker!
     
     @IBOutlet weak var EndPicker: UIDatePicker!
+    
+    @IBOutlet weak var moveOnButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +40,8 @@ class ViewController: UIViewController {
         let dtstring = dtF.string(from: dt)
         print("start time:")
         print(dtstring)
+        
+        shareTime.sTime = dtstring
     }
     
     
@@ -46,6 +55,13 @@ class ViewController: UIViewController {
         let dt0string = dt0F.string(from: dt0)
         print("end time:")
         print(dt0string)
+        
+        shareTime.eTime = dt0string
     }
     
+    //SKETCHY BUTTON ATTACHMENT
+    @IBAction func didTapButton(_ sender: Any){
+        //present(Controller2(), animated: true)
+        performSegue(withIdentifier: "segue1", sender: self)
+    }
 }
