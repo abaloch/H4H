@@ -26,11 +26,13 @@ class contacts: UIViewController {
     @IBOutlet weak var two: UITextField!
     @IBOutlet weak var three: UITextField!
 
-    @IBOutlet var ContactButtonObj: UIButton!
+ 
+    @IBOutlet var contactButton: UIButton!
     
-    @IBAction func ContactButtonAction(_ sender: UIButton) {
-        
-        //On press, the button should keep all values from text fields and then move onto next screen?
+    
+    @IBAction func contactButtonAction(_ sender: Any) {
+    
+    //On press, the button should keep all values from text fields and then move onto next screen?
 
         var name = ""
         var num0 = ""
@@ -59,9 +61,9 @@ class contacts: UIViewController {
         print(name + " " + num0 + " " + num1 + " " + num2 + " " + num3)
         
         //To backend
-        let defaults = UserDefaults.standard
-        defaults.set(name, forKey: "Name")
-        defaults.set(num0, forKey: "Ph")
+//        let defaults = UserDefaults.standard
+//        defaults.set(name, forKey: "Name")
+//        defaults.set(num0, forKey: "Ph")
         
     }
     

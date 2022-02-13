@@ -271,6 +271,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Button_Next" title=""/>
                                 <connections>
+                                    <action selector="contactButtonAction:" destination="5Yn-JM-oiF" eventType="touchUpInside" id="Kpc-s9-j2T"/>
                                     <action selector="toPlanningPage:" destination="5Yn-JM-oiF" eventType="touchUpInside" id="R1O-tg-3sg"/>
                                     <segue destination="UdR-TB-XGB" kind="presentation" identifier="seguetwo" modalPresentationStyle="fullScreen" id="Ps8-gE-niq"/>
                                 </connections>
@@ -288,6 +289,12 @@
                     </view>
                     <connections>
                         <outlet property="contactArrow" destination="KwV-Kl-jHv" id="8Y6-am-lYY"/>
+                        <outlet property="contactButton" destination="KwV-Kl-jHv" id="PR3-bS-Ht7"/>
+                        <outlet property="myName" destination="Zts-TX-y1d" id="PcR-PU-Yc4"/>
+                        <outlet property="one" destination="eWg-YT-gc9" id="noK-qF-wkR"/>
+                        <outlet property="three" destination="4YH-Oq-gg0" id="huT-UW-Kdg"/>
+                        <outlet property="two" destination="Bau-hV-LbY" id="KzM-ok-YoH"/>
+                        <outlet property="zero" destination="qsl-OH-adF" id="6Qi-uI-y0j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Vt-lY-YFR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
