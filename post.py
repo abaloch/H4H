@@ -30,7 +30,7 @@ def setNight():
     # cursor.execute("SELECT * FROM USER WHERE PH = 1234567890") not adding
     # name = request.args.get('name', None) we have one user atm
     # phoneNumber = request.args.get('phoneNumber', None)
-    phonenum = 1234567890
+    phonenum = 4405918757
     # cursor.execute('''UPDATE USER SET startTime = ? WHERE Ph = ?''', (request.args.get('startTime', None), phonenum))
 
     #cursor.execute('''UPDATE USER SET startTime = ? WHERE Ph = ?''', ('00:01:02', phonenum))
