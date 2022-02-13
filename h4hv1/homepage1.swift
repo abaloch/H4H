@@ -17,26 +17,23 @@ class Homepage1: UIViewController {
         performSegue(withIdentifier: "segue", sender: self)
     }
     
-//    @IBAction func toContactsPage(_ sender: UIButton) {
-//        performSegue(withIdentifier: "segue", sender: self) //TO MOVE TO NEXT VIEW!!!
-//    }
-    
-//    func makePhoneCall(phoneNumber: String) {
-//        if let phoneURL = NSURL(string: ("tel://" + phoneNumber)) {
-//
-//                let alert = UIAlertController(title: ("Call " + phoneNumber + "?"), message: nil, preferredStyle: .alert)
-//                alert.addAction(UIAlertAction(title: "Call", style: .default, handler: { (action) in
-//                    UIApplication.shared.open(phoneURL as URL, options: [:], completionHandler: nil)
-//                }))
-//
-//                alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-//                self.present(alert, animated: true, completion: nil)
-//            }
-//    }
 
-//    @IBAction func SOS(_ sender: UIButton) {
-//        makePhoneCall(phoneNumber: "911")
-//    }
+    func makePhoneCall(phoneNumber: String) {
+        if let phoneURL = NSURL(string: ("tel://" + phoneNumber)) {
+
+                let alert = UIAlertController(title: ("Call " + phoneNumber + "?"), message: nil, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Call", style: .default, handler: { (action) in
+                    UIApplication.shared.open(phoneURL as URL, options: [:], completionHandler: nil)
+                }))
+
+                alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+    }
+
+    @IBAction func SOS(_ sender: UIButton) {
+        makePhoneCall(phoneNumber: "911")
+    }
     
     
    
