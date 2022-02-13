@@ -42,13 +42,17 @@ class Controller2: UIViewController{
        if(((0 < sHour) && (sHour < 6)) && (nHour > 12)){
            hour = 24 - nHour
            hour += sHour
+           
+           print(hour)
        }
        else{
            hour = abs(sHour - nHour)
+           print(hour)
        }
         
         count = (hour * 3600) //convert hour to seconds
         count += (min * 60) //convert minute to seconds
+        print(count)
     }
     
     override func viewDidLoad(){
@@ -63,7 +67,36 @@ class Controller2: UIViewController{
         if(count > 0){
             var countHour = abs(hour)
             var countMin = abs(min)
-            var countSec = 60 - nSec //not really that great but works enough for me
+            var countSec = 0 //not really that great but works enough for me
+            
+            /*var minute2 = 0
+            var hour2 = 0
+            var sec2 = 0
+            
+            for i in 0...count {
+                if(i == 60){
+                    minute2 += 1
+                    count -= 60
+                }
+                if(minute2 == 60){
+                    minute2 = 0
+                    count -= 3600
+                    hour2 += 1
+                }
+                
+                sec2 = count
+            }
+            
+            print(countHour)
+            print(countMin)
+            print(countSec)
+            
+            print("hour2")
+            print(hour2)
+            print("minute2")
+            print(minute2)
+            print("sec2")
+            print(sec2)*/
             
             if(mIter < 60){
                 countMin -= 1
@@ -81,7 +114,20 @@ class Controller2: UIViewController{
                 hIter = 0
             }
             
-            countSec = count - (countHour*3600) - (countMin * 60) - 3600
+            countSec = count - (countHour*3600) - (countMin * 60)
+            
+            if(countSec < 0 && countMin > 0){
+                countMin -= 1
+                countSec = 60
+            }
+            if(countMin < 0 && countHour > 0){
+                countHour -= 1
+                countMin = 60
+            }
+            if(countHour >= 1 && countMin == 0 && countSec == 0){
+                countHour -= 1
+                countMin = 60
+            }
             
             if(countHour < 0){
                 countHour = 0
