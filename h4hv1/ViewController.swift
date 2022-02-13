@@ -8,22 +8,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+   
+    @IBOutlet weak var DatePicker: UIDatePicker!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
 
-    func hello() {
-        print("hey")
+    @IBAction func pickedDateTime(_ sender: UIDatePicker) {
+        
+        print(DatePicker.date)
+        
+        print(DatePicker.timeZone)
     }
     
-    func jodi() {
-        print("heyyoo")
-    }
-    
-    func HELP() {
-        print("testing one two three")
-    }
 }
 
