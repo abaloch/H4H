@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
     
    
     @IBOutlet weak var DatePicker: UIDatePicker!
     
-    
+    @IBOutlet weak var EndPicker: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +22,30 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction func pickedDateTime(_ sender: UIDatePicker) {
+    @IBAction func pickedStartDateTime(_ sender: UIDatePicker) {
         
-        print(DatePicker.date)
+        //convert start time into a string
+        let dt = DatePicker.date
+        let dtF = DateFormatter()
         
-        print(DatePicker.timeZone)
+        dtF.dateFormat = "HH:mm:ss"
+        
+        let dtstring = dtF.string(from: dt)
+        print("start time:")
+        print(dtstring)
+    }
+    
+    
+    @IBAction func pickedEndDateTime(_ sender: UIDatePicker) {
+        //convert start time into a string
+        let dt0 = EndPicker.date
+        let dt0F = DateFormatter()
+        
+        dt0F.dateFormat = "HH:mm:ss"
+        
+        let dt0string = dt0F.string(from: dt0)
+        print("end time:")
+        print(dt0string)
     }
     
 }
