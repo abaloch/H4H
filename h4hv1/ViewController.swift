@@ -6,12 +6,16 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
+    
+    
     
    
     @IBOutlet weak var DatePicker: UIDatePicker!
     
+    @IBOutlet weak var endDatePicker: UIDatePicker!
     
     
     override func viewDidLoad() {
@@ -24,8 +28,18 @@ class ViewController: UIViewController {
         
         print(DatePicker.date)
         
-        print(DatePicker.timeZone)
+        //
     }
     
+    @IBAction func pickedEndTime(_ sender: UIDatePicker) {
+        print(endDatePicker.date)
+        
+        
+        print(type(of: endDatePicker.date))
+        
+        
+    }
+    
+
 }
 
