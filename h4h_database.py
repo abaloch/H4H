@@ -11,18 +11,13 @@ cursor = connection.cursor()
 # create USER table
 cursor.execute("DROP TABLE IF EXISTS USER")
 createTable = '''CREATE TABLE USER(
-Name VARCHAR(100), Ph int, startTime varchar(40),
-endTime varchar(40), PType VARCHAR(30), PValue1 VARCHAR(30), PValue2 VARCHAR(30), 
+Name VARCHAR(100), Ph int, PType VARCHAR(30), PValue1 VARCHAR(30), PValue2 VARCHAR(30), 
 CF1Num int, CF2Num int, CF3Num int)'''
 
 cursor.execute(createTable)
 
 # Insert data into the table when you get it
-a="badminton"
-cursor.execute(f"INSERT INTO USER VALUES ('NULL',123456789, 070000, 010000, 'Shape', 'NULL','NULL',0, 0, 0)")
-
-b = "select PType from User;"
-b=cursor.execute("select PType from User;")
+cursor.execute(f"INSERT INTO USER VALUES ('NULL',4405918757, 'Shape', 'NULL','NULL',0, 0, 0)")
 
 cursor.execute("SELECT * FROM USER")
 

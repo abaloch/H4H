@@ -17,25 +17,25 @@ app = Flask(__name__)
 def ret():
     connection = sqlite3.connect('h4h_database.db', check_same_thread=False) #connecting to database
     cursor = connection.cursor() # cursor
-    cursor.execute("SELECT PType from User where Ph=123456789;") #getting the Password Type from the database
+    cursor.execute("SELECT PType from User where Ph=4405918757;") #getting the Password Type from the database
 
     l=cursor.fetchone()[0] # l takes the value of the Password type
 
-    cursor.execute(f"Update user set PValue1= (select * from \'{l}\' order by random() limit 1) where Ph = 123456789;")
+    cursor.execute(f"Update user set PValue1= (select * from \'{l}\' order by random() limit 1) where Ph = 4405918757;")
     connection.commit()
 
-    cursor.execute("Select PValue1 from User where Ph=123456789;")
+    cursor.execute("Select PValue1 from User where Ph=4405918757;")
     aaa=cursor.fetchone()[0]
     return aaa
 
     # updates user's PValue 1 (first password) to take the value of the randomly generated password
-    cursor.execute(f"SELECT PValue1 from User where Ph=123456789;")
+    cursor.execute(f"SELECT PValue1 from User where Ph=4405918757;")
     aa=cursor.fetchone()[0] #aa takes the value of the first randomly generated password
 
-    cursor.execute(f"Update user set PValue2= (select * from \'{l}\' order by random() limit 1) where Ph = 123456789;")
+    cursor.execute(f"Update user set PValue2= (select * from \'{l}\' order by random() limit 1) where Ph = 4405918757;")
     connection.commit()
     # updates user's PValue 2 (second password) to take the value of the randomly generated password
-    cursor.execute(f"SELECT PValue2 from User where Ph=123456789;")
+    cursor.execute(f"SELECT PValue2 from User where Ph=4405918757;")
     bb=cursor.fetchone()[0] #bb takes the value of the second randomly generated password
     cursor.close()
     connection.close()
@@ -48,15 +48,15 @@ def ret():
 def retopt1():
     connection = sqlite3.connect('h4h_database.db', check_same_thread=False) #connecting to database
     cursor = connection.cursor() # cursor
-    cursor.execute("SELECT PType from User where Ph=123456789;") #getting the Password Type from the database
+    cursor.execute("SELECT PType from User where Ph=4405918757;") #getting the Password Type from the database
 
     l=cursor.fetchone()[0] # l takes the value of the Password type
 
-    cursor.execute(f"Update user set PValue1= (select * from \'{l}\' order by random() limit 1) where Ph = 123456789;")
+    cursor.execute(f"Update user set PValue1= (select * from \'{l}\' order by random() limit 1) where Ph = 4405918757;")
     connection.commit()
 
 
-    cursor.execute("Select PValue1 from User where Ph=123456789;")
+    cursor.execute("Select PValue1 from User where Ph=4405918757;")
     p1= cursor.fetchone()[0]
 
 
@@ -89,15 +89,15 @@ def retopt1():
 def retopt2():
     connection = sqlite3.connect('h4h_database.db', check_same_thread=False) #connecting to database
     cursor = connection.cursor() # cursor
-    cursor.execute("SELECT PType from User where Ph=123456789;") #getting the Password Type from the database
+    cursor.execute("SELECT PType from User where Ph=4405918757;") #getting the Password Type from the database
 
     l=cursor.fetchone()[0] # l takes the value of the Password type
 
-    cursor.execute(f"Update user set PValue2= (select * from \'{l}\' order by random() limit 1) where Ph = 123456789;")
+    cursor.execute(f"Update user set PValue2= (select * from \'{l}\' order by random() limit 1) where Ph = 4405918757;")
     connection.commit()
 
 
-    cursor.execute("Select PValue2 from User where Ph=123456789;")
+    cursor.execute("Select PValue2 from User where Ph=4405918757;")
     p2= cursor.fetchone()[0]
 
 
