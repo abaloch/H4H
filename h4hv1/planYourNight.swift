@@ -7,7 +7,10 @@
 
 import UIKit
 
-
+struct passValues{
+    static var startTime = "21:30:00"
+    static var endTime = "01:00:00"
+}
 
 class planYourNight: UIViewController {
 
@@ -17,13 +20,10 @@ class planYourNight: UIViewController {
 
     }
     
-    
- 
-    
-    @IBAction func toPasswordView(_ sender: UIButton) {
-        performSegue(withIdentifier: "seguethree", sender: self)
-    }
-    
-    
-}
 
+    @IBOutlet var planningButton: UIButton!
+    
+    @IBAction func planningButtonAction(_ sender: Any) {
+        performSegue(withIdentifier: "segue3", sender: self)
+    }
+}
